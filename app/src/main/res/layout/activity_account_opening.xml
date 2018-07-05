@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".AccountOpeningActivity"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/bank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#0E74B4"
+        android:text="Personal Details"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:textColor="#EDEDED" />
+
+    <TextView
+        android:id="@+id/alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please fill all inputs!"
+        android:textSize="14sp"
+        android:textColor="#F48024"
+        android:background="#EDEDED"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="5dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#D6B8D1">
+
+            <EditText
+                android:id="@+id/full_name"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/form_elements_bg"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="16sp"
+                android:textColor="#0E0E0E"
+                android:drawableEnd="@drawable/name"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:hint="Full Name (*)"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/form_elements_bg"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="16sp"
+                android:textColor="#0E0E0E"
+                android:hint="Date of Birth (*)"
+                android:textColorHint="#AAAAAA"
+                android:drawableEnd="@drawable/calender"
+                android:gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp" />
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#0E0E0E"
+                android:textSize="16sp"
+                android:hint="Gender (*)"
+                android:gravity="center_vertical"
+                android:drawableEnd="@drawable/name"
+                android:background="@drawable/form_elements_bg"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/nationality"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/form_elements_bg"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="16sp"
+                android:textColor="#0E0E0E"
+                android:drawableEnd="@drawable/nationality"
+                android:singleLine="true"
+                android:hint="Nationality (*)"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp" />
+
+            <ListView
+                android:id="@+id/country_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textColor="#0E0E0E"
+                android:textSize="18sp"
+                android:background="#FFFFFF"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:dividerHeight="0dp" />
+
+            <EditText
+                android:id="@+id/visa"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/form_elements_bg"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="16sp"
+                android:textColor="#0E0E0E"
+                android:singleLine="true"
+                android:hint="Visa (optional)"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/id"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/form_elements_bg"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="16sp"
+                android:textColor="#0E0E0E"
+                android:singleLine="true"
+                android:hint="Citizen Card/ID/Passport (*)"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/doi"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/form_elements_bg"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="14sp"
+                    android:textColor="#0E0E0E"
+                    android:hint="Date of Issue (*)"
+                    android:textColorHint="#AAAAAA"
+                    android:layout_marginEnd="5dp"
+                    android:drawableEnd="@drawable/calender"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/poi"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/form_elements_bg"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="14sp"
+                    android:textColor="#0E0E0E"
+                    android:singleLine="true"
+                    android:hint="Place of Issue (*)"
+                    android:textColorHint="#AAAAAA"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/residential_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#0E0E0E"
+                android:textSize="16sp"
+                android:hint="Residential Status (*)"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp" />
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/martial_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#0E0E0E"
+                android:textSize="16sp"
+                android:hint="Martial Status (*)"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/form_elements_bg"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="16sp"
+                android:textColor="#0E0E0E"
+                android:singleLine="true"
+                android:hint="Phone (*)"
+                android:textColorHint="#AAAAAA"
+                android:inputType="phone"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/form_elements_bg"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="16sp"
+                android:textColor="#0E0E0E"
+                android:singleLine="true"
+                android:hint="E-Mail (optional)"
+                android:textColorHint="#AAAAAA"
+                android:inputType="textEmailAddress"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#0E0E0E"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/education"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#0E0E0E"
+                android:textSize="16sp"
+                android:hint="Education (*)"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp" />
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/occupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#0E0E0E"
+                android:textSize="16sp"
+                android:hint="Occupation (*)"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp" />
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#0E0E0E"
+                android:textSize="16sp"
+                android:hint="Position (*)"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#0E0E0E"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <EditText
+                android:id="@+id/resi_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form_elements_bg"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:textColor="#0E0E0E"
+                android:singleLine="false"
+                android:hint="Residential Address (*)"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp">
+
+                <CheckBox
+                    android:id="@+id/copy_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Check if Residential Address is same as Permanent Address"
+                    android:textColor="#0E0E0E"
+                    android:theme="@style/Theme.AppCompat.DayNight" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/per_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form_elements_bg"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:textColor="#0E0E0E"
+                android:singleLine="false"
+                android:hint="Permanent Address (*)"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/over_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form_elements_bg"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:textColor="#0E0E0E"
+                android:singleLine="false"
+                android:hint="Overseas Address (optional)"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/workplace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/form_elements_bg"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:textColor="#0E0E0E"
+                android:singleLine="false"
+                android:hint="Workplace (*)"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#0E0E0E"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#1EBDA4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/s20"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#EDEDED"
+                    android:background="#0E74B4" />
+
+                <RadioButton
+                    android:id="@+id/us_citizen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:theme="@style/Theme.AppCompat.DayNight"
+                    android:text="@string/s21"
+                    android:textColor="#0E0E0E"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/us_tax_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/form_elements_bg"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="16sp"
+                    android:textColor="#0E0E0E"
+                    android:singleLine="true"
+                    android:hint="US Tax Code"
+                    android:textColorHint="#AAAAAA"
+                    android:visibility="gone"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp" />
+
+                <RadioButton
+                    android:id="@+id/non_us_citizen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/s22"
+                    android:textSize="14sp"
+                    android:textColor="#0E0E0E"
+                    android:padding="5dp"
+                    android:theme="@style/Theme.AppCompat.DayNight"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/rounded_button"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:text="Confirm"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:drawableStart="@drawable/submit"
+                    android:drawablePadding="10dp"
+                    android:theme="@style/ButtonTextTheme" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

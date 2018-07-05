@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">FDdirect</string>
+    <string name="s1">A wide range of tenures, ranging from 7 days to 10 years, to suit your Investment plan.</string>
+    <string name="s2">Partial withdrawal is permitted in units of 1,000. The balance amount earns the original rate of interest.</string>
+    <string name="s3">Safe custody of your fixed deposit receipts.</string>
+    <string name="s4">Facility of automatic renewal.</string>
+    <string name="s5">Loan facility is available up to 90% of principal and accrued interest.</string>
+    <string name="s6">Expert Advise</string>
+    <string name="s7">Secure"\n"Transactions</string>
+    <string name="s8">Family Friendly</string>
+    <string name="s9">Investment Amount &amp; Tenure</string>
+    <string name="s10">Interest</string>
+    <string name="s11">Bank</string>
+    <string name="s12">Tenure</string>
+    <string name="s13">Maturity Amount</string>
+    <string name="s14">Gender</string>
+    <string name="s15">Residential Status</string>
+    <string name="s16">Martial Status</string>
+    <string name="s17">Education</string>
+    <string name="s18">Occupation</string>
+    <string name="s19">Position</string>
+    <string name="s20">FATCA - Foreign Account Tax Compliance Act</string>
+    <string name="s21">I am a US citizen or resident US citizen or have residence address or hold greencards or a US tax payer</string>
+    <string name="s22">I am not listed as the above at the present</string>
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="residential_status_array">
+        <item>Resident</item>
+        <item>Non-Resident</item>
+    </string-array>
+    <string-array name="martial_status_array">
+        <item>Single</item>
+        <item>Married</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="education_array">
+        <item>Post Graduate</item>
+        <item>Graduate</item>
+        <item>Diploma</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="occupation_array">
+        <item>Finance</item>
+        <item>Office Staff</item>
+        <item>Business</item>
+        <item>Teacher</item>
+        <item>Student</item>
+        <item>Worker</item>
+        <item>Police/Military</item>
+        <item>Retired</item>
+        <item>Housewife</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="position_array">
+        <item>Director/Deputy Director</item>
+        <item>Manager/Deputy Manager</item>
+        <item>Staff</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="nature_of_deposit_array">
+        <item>Monthly Interest Payment</item>
+        <item>Quarterly Interest Payment</item>
+        <item>Re-Investment of Interest</item>
+    </string-array>
+    <string-array name="maturity_instructions_array">
+        <item>Renew Principal &amp; Interest</item>
+        <item>Renew Principal only</item>
+        <item>Don\'t Renew</item>
+    </string-array>
+    <string name="history">Investment History</string>
+    <string name="about">About</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

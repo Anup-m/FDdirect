@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fddirect_logo" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/investments_logo"
+                android:text="SECURE YOUR FUTURE WITH OUR\n Fixed Deposit Plan"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="3dp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="Our"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Offers"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="40sp"
+                    android:layout_height="3dp"
+                    android:background="@color/colorBlue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@color/colorTransparent"
+                android:gravity="top"
+                android:paddingStart="3dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bullet"
+                    android:layout_marginTop="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/s1"
+                    android:textColor="@color/colorTransparentText"
+                    android:textSize="16sp"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@color/colorTransparent"
+                android:gravity="top"
+                android:paddingStart="3dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bullet"
+                    android:layout_marginTop="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/s2"
+                    android:textColor="@color/colorTransparentText"
+                    android:textSize="16sp"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@color/colorTransparent"
+                android:gravity="top"
+                android:paddingStart="3dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bullet"
+                    android:layout_marginTop="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/s3"
+                    android:textColor="@color/colorTransparentText"
+                    android:textSize="16sp"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@color/colorTransparent"
+                android:gravity="top"
+                android:paddingStart="3dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bullet"
+                    android:layout_marginTop="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/s4"
+                    android:textColor="@color/colorTransparentText"
+                    android:textSize="16sp"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@color/colorTransparent"
+                android:gravity="top"
+                android:paddingStart="3dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bullet"
+                    android:layout_marginTop="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/s5"
+                    android:textColor="@color/colorTransparentText"
+                    android:textSize="16sp"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="30dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorLightPink"
+                    android:drawableTop="@drawable/img1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/s6"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorLightGreen"
+                    android:drawableTop="@drawable/img2"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/s7"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorLightBlue"
+                    android:drawableTop="@drawable/img3"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/s8"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/invest_now"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="50dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_gravity="center"
+                android:text="Invest Now"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:background="@drawable/rounded_button"
+                android:drawableStart="@drawable/invest"
+                android:drawablePadding="5dp"
+                android:theme="@style/ButtonTextTheme" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

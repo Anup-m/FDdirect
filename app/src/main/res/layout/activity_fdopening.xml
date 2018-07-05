@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".FDOpeningActivity"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/bank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#0E74B4"
+        android:text="Bank Details"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:textColor="#EDEDED" />
+
+    <TextView
+        android:id="@+id/alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please fill all inputs!"
+        android:textSize="14sp"
+        android:textColor="#F48024"
+        android:background="#EDEDED"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="5dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#D6B8D1">
+
+            <EditText
+                android:id="@+id/full_name"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/form_elements_bg"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="16sp"
+                android:textColor="#0E0E0E"
+                android:singleLine="true"
+                android:hint="Full Name (*)"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/acc_no"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/form_elements_bg"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="16sp"
+                android:textColor="#0E0E0E"
+                android:singleLine="true"
+                android:hint="Account No. (*)"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/deposit_amount"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/form_elements_bg"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="16sp"
+                android:textColor="#0E0E0E"
+                android:singleLine="true"
+                android:hint="Deposit Amount (*)"
+                android:textColorHint="#AAAAAA"
+                android:inputType="number"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp" />
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/nod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#0E0E0E"
+                android:textSize="16sp"
+                android:hint="Nature of Deposit (*)"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/deposit_period"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/form_elements_bg"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="14sp"
+                android:textColor="#0E0E0E"
+                android:singleLine="true"
+                android:hint="Tenure in days (*)"
+                android:textColorHint="#AAAAAA"
+                android:inputType="number"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp" />
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/maturity_instruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#0E0E0E"
+                android:textSize="16sp"
+                android:hint="Maturity Instruction (*)"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/rounded_button"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="Confirm"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:drawableStart="@drawable/submit"
+                android:drawablePadding="10dp"
+                android:theme="@style/ButtonTextTheme" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
