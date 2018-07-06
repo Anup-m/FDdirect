@@ -1,4 +1,4 @@
-package com.entiovi.android.fddirect;
+package com.entiovi.android.fddirect.activity;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -13,6 +13,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.entiovi.android.fddirect.R;
 import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
 import java.util.Arrays;
@@ -118,7 +119,7 @@ public class FDOpeningActivity extends AppCompatActivity implements View.OnClick
         btn_agree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(FDOpeningActivity.this, BankPackages2Activity.class);
+                Intent intent = new Intent(FDOpeningActivity.this, BankPackagesActivity.class);
                 intent.putExtra("Amount", bundle.getString("Amount"));
                 intent.putExtra("Tenure", bundle.getString("Tenure"));
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

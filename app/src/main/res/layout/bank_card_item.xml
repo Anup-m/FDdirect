@@ -3,48 +3,43 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
-    android:layout_height="90dp"
+    android:layout_height="80dp"
     android:id="@+id/bank_card"
-    app:cardMaxElevation="1dp"
-    android:elevation="1dp"
+    app:cardMaxElevation="5dp"
+    android:elevation="5dp"
     app:cardCornerRadius="2dp"
     app:cardUseCompatPadding="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#948fb2"
+        android:background="@color/colorWhite"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:weightSum="5">
+        android:weightSum="7.5">
 
         <TextView
             android:id="@+id/interest_rate"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="1.4"
             android:gravity="center"
-            android:text="100" />
+            android:text="1.92 p.a."
+            android:textColor="@color/colorBlack" />
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:scaleY="4">
 
             <ImageView
                 android:id="@+id/bank_logo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingBottom="10dp"
-                android:src="@drawable/close" />
-
-            <TextView
-                android:id="@+id/bank_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="XYZ" />
+                android:src="@drawable/citibank_logo" />
 
         </LinearLayout>
 
@@ -52,17 +47,19 @@
             android:id="@+id/fd_tenure"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="1.3"
             android:gravity="center"
-            android:text="1 Year" />
+            android:text="5 Yrs"
+            android:textColor="@color/colorBlack" />
 
         <TextView
             android:id="@+id/fd_amount"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="2.5"
             android:gravity="center"
-            android:text="Amount+interest" />
+            android:text="5,000,000\n+1,200\n=6200000"
+            android:textColor="@color/colorBlack" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -77,11 +74,14 @@
                 android:background="@drawable/rounded_button"
                 android:padding="5dp"
                 android:text="Proceed"
+                android:textAllCaps="false"
                 android:textSize="10sp"
-                android:textAllCaps="false" />
+                android:theme="@style/ButtonTextTheme" />
 
         </LinearLayout>
 
     </LinearLayout>
+
+
 
 </android.support.v7.widget.CardView>

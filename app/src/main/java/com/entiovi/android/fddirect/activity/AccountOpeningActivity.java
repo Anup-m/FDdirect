@@ -1,4 +1,4 @@
-package com.entiovi.android.fddirect;
+package com.entiovi.android.fddirect.activity;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -23,6 +23,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.entiovi.android.fddirect.R;
 import com.wdullaer.materialdatetimepicker.date.DatePickerDialog;
 import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
@@ -395,7 +396,7 @@ public class AccountOpeningActivity extends AppCompatActivity implements View.On
         btn_agree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AccountOpeningActivity.this, BankPackages2Activity.class);
+                Intent intent = new Intent(AccountOpeningActivity.this, BankPackagesActivity.class);
                 intent.putExtra("Amount", bundle.getString("Amount"));
                 intent.putExtra("Tenure", bundle.getString("Tenure"));
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

@@ -12,7 +12,7 @@
         android:supportsRtl="false"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:screenOrientation="nosensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,18 +20,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".BankPackagesActivity"
-            android:screenOrientation="nosensor" />
-        <activity
-            android:name=".BankPackages2Activity"
-            android:screenOrientation="nosensor" />
-        <activity
-            android:name=".AccountOpeningActivity"
+            android:name=".activity.AccountOpeningActivity"
             android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity
-            android:name=".FDOpeningActivity"
+            android:name=".activity.FDOpeningActivity"
             android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <activity android:name=".activity.BankPackagesActivity"
+            android:screenOrientation="nosensor" />
+
     </application>
 
 </manifest>

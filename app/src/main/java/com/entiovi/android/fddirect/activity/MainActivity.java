@@ -1,4 +1,4 @@
-package com.entiovi.android.fddirect;
+package com.entiovi.android.fddirect.activity;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -15,6 +15,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.entiovi.android.fddirect.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -93,8 +95,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         dialog.dismiss();
                         amount_Text = amount.getText().toString();
                         tenor_Text = tenor.getText().toString();
-                        Intent intent = new Intent(MainActivity.this, BankPackages2Activity.class);
-                        intent.putExtra("Amount", amount_Text);
+                        Intent intent = new Intent(MainActivity.this, BankPackagesActivity.class);
+                           intent.putExtra("Amount", amount_Text);
                         intent.putExtra("Tenure", tenor_Text);
                         startActivity(intent);
                         finish();
